@@ -1,0 +1,42 @@
+.central_widget {
+                background-color:rgb(19, 19, 19);
+}
+.list_wid {
+            background-color:rgb(42, 42, 42)
+}
+.section1 {
+            background-color: rgb(142, 142, 142);
+}
+.section2 {
+            background-color: rgb(142, 142, 142);
+}
+.section3 {
+            background-color: rgb(142, 142, 142);
+}
+.load_button {
+            background-color:  rgb(42, 42, 42);
+            color: rgb(185, 185, 185);
+            font: bold;
+}
+.load_all_button {
+            background-color:  rgb(42, 42, 42);
+            color: rgb(185, 185, 185);
+            font: bold;
+}
+.export {
+            background-color:  rgb(42, 42, 42);
+            color: rgb(185, 185, 185);
+            font: bold;
+}
+.export_as_group {
+            background-color:  rgb(42, 42, 42);
+            color: rgb(185, 185, 185);
+            font: bold;
+}
+.radio_hi {
+        font: bold;
+}
+.clear {
+        font: bold;
+        background-color: rgb(42, 42, 42)
+}
