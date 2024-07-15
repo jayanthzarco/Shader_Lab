@@ -1,5 +1,6 @@
-from PySide2 import QtWidgets
+from PySide6 import QtWidgets
 from shader_lab.maya_commands import MayaCmds
+
 
 class SourceListWID(QtWidgets.QListWidget):
     def __init__(self):
@@ -99,7 +100,6 @@ class ShaderTransferUI(QtWidgets.QMainWindow):
         # connection
         self._connection()
 
-
     def _connection(self):
         self.source_h_btn.clicked.connect(self._source_load)
         self.source_clear_btn.clicked.connect(self.source_list_wid.clear)
@@ -107,16 +107,13 @@ class ShaderTransferUI(QtWidgets.QMainWindow):
         self.dest_clear_btn.clicked.connect(self.dest_list_wid.clear)
         self.transfer_btn.clicked.connect(self._transfer)
 
-
-
     def _source_load(self):
         if self.source_radio_btn.isChecked():
             hierarchy = True
         else:
-            hierarchy =False
+            hierarchy = False
         self.input_data = self.maya.return_selection(hierarchy=hierarchy)
         self.source_list_wid.populate_data(data=self.input_data, clear=True)
-
 
     def _dest_load(self):
         print("DESTINATION LOADING ..")
